@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "kurwa-firefox",
+  "version": "1.0",
+
+  "description": "Kurwafies content",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["kurwa.js"]
+    }
+  ]
+}
+
